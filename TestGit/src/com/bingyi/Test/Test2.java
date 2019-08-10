@@ -8,5 +8,7 @@ public class Test2 {
 	
 	void push() {
 		System.out.println("hunnnn");
+		System.out.println("6789");
+		System.out.println("67bvub");
 	}
 }
