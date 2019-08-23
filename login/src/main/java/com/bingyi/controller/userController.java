@@ -68,4 +68,12 @@ public class userController {
 		}
 		return "error";
 	}
+	
+	@RequestMapping("select")
+	public String select(String name,Model model) {
+		System.out.println(name);
+		List<User> list = userServiceImp.selByName(name);
+		model.addAttribute("list",list);
+		return "main";
+	}
 }

@@ -24,6 +24,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
+  <form action="select" method="post">
+  	根据用户名查询：<input type="text" name="name">
+ 	<input type="submit" value="查询"> 
+  </form>
+  
   <table border="1px">
   	<tr>
   		<td>id</td>
@@ -44,6 +49,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   		</tr>
   	</c:forEach>
   </table>
+   <a href="add.jsp">上一页</a>
+    <a href="add.jsp">下一页</a>
   <a href="add.jsp">新增用户</a>
   </body>
   

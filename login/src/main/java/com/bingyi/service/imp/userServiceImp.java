@@ -34,5 +34,10 @@ public class userServiceImp implements userService{
 	public int updUser(User user) {
 		return userMapper.updateUser(user);
 	}
+	@Override
+	public List<User> selByName(String name) {
+		// TODO Auto-generated method stub
+		return userMapper.selectByName(name);
+	}
 	
 }

@@ -14,4 +14,6 @@ public interface userService{
 	public int insUser(User user);
 	
 	public int updUser(User user);
+	
+	public List<User> selByName(String name);
 }

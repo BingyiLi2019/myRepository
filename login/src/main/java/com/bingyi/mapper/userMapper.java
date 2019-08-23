@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
@@ -24,4 +25,8 @@ public interface userMapper {
 	
 	@Update("update user set name=#{name},pwd=#{pwd} where id=#{id} ")
 	public int updateUser(User user);
+	
+	//There is no getter for property named 'name' in 'class java.lang.String'
+	//错误原因：在mybatis中单独传入一个string类型参数，要是用_parammeter,或者使用标签@param("")
+	public List<User> selectByName(@Param("name") String name);
 }

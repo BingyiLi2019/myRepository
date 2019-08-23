@@ -4,6 +4,7 @@
   <artifactId>login</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  
   <properties>
   	<webVersion>4.0</webVersion>
   	<servlet-version>3.0.1</servlet-version>
@@ -95,6 +96,7 @@
 	</dependency>
   </dependencies>
   <build>
+  <!-- 配置单独的tomcat7服务器 -->
 	<plugins>
          <plugin>
              <groupId>org.apache.tomcat.maven</groupId>
@@ -106,5 +108,21 @@
              </configuration>
          </plugin>
      </plugins>
+     <!-- 通过resources标签实现对mappers.xml进行解析，否则无法解析 -->
+     <resources>
+     	<resource>
+     		<directory>src/main/java</directory>
+     		<includes>
+     			<include>**/*.xml</include>
+     		</includes>
+     	</resource>
+     	<resource>
+     		<directory>src/main/resources</directory>
+     		<includes>
+     			<include>**/*.xml</include>
+     			<include>**/*.properties</include>
+     		</includes>
+     	</resource>
+     </resources>
   </build>
 </project>
