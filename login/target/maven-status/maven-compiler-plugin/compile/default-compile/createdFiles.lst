@@ -1,5 +1,7 @@
+com\bingyi\util\Page.class
 com\bingyi\mapper\userMapper.class
 com\bingyi\service\imp\userServiceImp.class
+Test1.class
 com\bingyi\controller\userController.class
 com\bingyi\pojo\Menu.class
 com\bingyi\pojo\User.class
