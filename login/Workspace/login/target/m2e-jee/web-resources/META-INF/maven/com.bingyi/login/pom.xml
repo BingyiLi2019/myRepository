@@ -15,7 +15,7 @@
   	<mybatis-spring-version>1.3.1</mybatis-spring-version>
   	<mysql-connector-version>8.0.11</mysql-connector-version>
   	<log4j-version>1.2.17</log4j-version>
-  	<jackson-version>2.9.9</jackson-version>
+  	<jackson-version>2.12.6.1</jackson-version>
   	<aspectj-version>1.9.4</aspectj-version>
   	<aopalliance-version>1.0</aopalliance-version>
   	<fileupload-version>1.4</fileupload-version>
